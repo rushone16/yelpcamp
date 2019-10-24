@@ -97,7 +97,7 @@ router.post('/forgot', function(req, res, next) {
         service: 'Gmail', 
         auth: {
           user: 'rushabhshah2516@gmail.com',
-          pass: process.env.GMAILPW
+          pass: 'Rus#Co.#2516'
         }
       });
       var mailOptions = {
@@ -161,7 +161,7 @@ router.post('/reset/:token', function(req, res) {
         service: 'Gmail', 
         auth: {
           user: 'rushabhshah2516@gmail.com',
-          pass: process.env.GMAILPW
+          pass: 'Rus#Co.#2516'
         }
       });
       var mailOptions = {
