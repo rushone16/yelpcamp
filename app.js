@@ -9,7 +9,8 @@ var express     	= require("express"),
     Comment     	= require("./models/comment"),
 	flash			= require("connect-flash"),
     User        	= require("./models/user"),
-    seedDB      	= require("./seeds")
+    seedDB      	= require("./seeds"),
+	dotenv			= require('dotenv').config()
 
 app.locals.moment = require('moment');
 

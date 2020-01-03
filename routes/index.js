@@ -5,9 +5,9 @@ var User = require("../models/user");
 var Campground = require("../models/campground");
 var async = require("async");
 var nodemailer = require("nodemailer");
-var crypto = require("crypto");
+var crypto = require("crypto")
 
-
+require('dotenv').config();
 
 //root route
 router.get("/", function(req, res){
@@ -181,6 +181,10 @@ router.post('/reset/:token', function(req, res) {
   });
 });
 
+//CONATCT US FORM
+router.get("/contact", function(req, res){
+    res.render("contactus");
+});
 
 // USER PROFILE
 router.get("/users/:id", function(req, res) {
